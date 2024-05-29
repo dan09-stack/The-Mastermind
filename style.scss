@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+}
+:root{
+  --primary-color: #FF8B00;
+}
+.prim-color{
+  color: var(--primary-color);
+}
+.container{
+  max-width: 1200px;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 800 !important;
+}
+
+/* FIRST SECTION */
+
+.first-section{
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://mastermind.ph/wp-content/themes/understrap-child-1.2.0/images/pexels-faris-al-orfali-1697160.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 75% 15%;
+    filter: brightness(60%);
+}
+  li{ 
+    font-size: 18px;
+  }
+  h2{
+    line-height: 1.5;
+  }
+  .tagline{
+    margin-top: auto;
+    margin-bottom: 12%;
+    
+  }
+  .logo-container{
+    max-width: 280px;
+    position: absolute;
+    
+    right: 72%;
+    z-index: 1;
+    img{
+      max-width: 100%;
+      position: relative;
+      left: 0px;
+    }
+  }
+}
+.vision-mission{
+  position: absolute;
+  background-image: url(https://mastermind.ph/wp-content/themes/understrap-child-1.2.0/images/TMDC_Logo_inverted.png);
+  background-repeat: no-repeat;
+  background-size: 60vw;
+  background-position: -33% 10%; 
+  p{
+    text-align: justify;
+    text-justify: auto;
+    font-weight: 400 !important;
+  }
+  .second-section{
+    .sec2-title{
+      text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.69);
+    }
+    height: 1100px;
+    h1{
+      font-size: 7vw;
+    }
+    .sec2-p1{
+      text-align: justify;
+      max-width: 430px;
+    }
+  }
+  .third-section{
+    height: 52vw;
+    margin-top: 10%;
+    
+    .sec2-p2{
+      max-width: 100%;
+    }
+    .vision{
+      height: 100%;
+      
+      .vision-img-container{
+        width: 50%;
+        animation: bg-animate 2s forwards;
+        animation-delay: 2s;
+        background-color: var(--primary-color);
+        z-index: 1;
+      }
+      img{
+        height: 96%;
+        width: 96%;
+        z-index: 2;
+      }
+    }
+    .mission{
+      margin-top: 5rem;
+    }
+  }
+}
+/* FOURTH SECTION */
+.fourth-section{
+
+}
+.animate-width {
+  animation: bg-animate 2s forwards;
+  animation-delay: 2s;
+  width: 100px;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+@keyframes bg-animate{
+  0%{
+   width: 50%;
+ }
+  50%{
+   width: 75%;
+ }
+  100%{
+   width: 50%;
+ }
+}

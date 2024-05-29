@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+}
+
+:root {
+  --primary-color: #FF8B00;
+}
+
+.prim-color {
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800 !important;
+}
+
+/* FIRST SECTION */
+.first-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://mastermind.ph/wp-content/themes/understrap-child-1.2.0/images/pexels-faris-al-orfali-1697160.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 75% 15%;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.first-section li {
+  font-size: 18px;
+}
+.first-section h2 {
+  line-height: 1.5;
+}
+.first-section .tagline {
+  margin-top: auto;
+  margin-bottom: 12%;
+}
+.first-section .logo-container {
+  max-width: 280px;
+  position: absolute;
+  right: 72%;
+  z-index: 1;
+}
+.first-section .logo-container img {
+  max-width: 100%;
+  position: relative;
+  left: 0px;
+}
+
+.vision-mission {
+  position: absolute;
+  background-image: url(https://mastermind.ph/wp-content/themes/understrap-child-1.2.0/images/TMDC_Logo_inverted.png);
+  background-repeat: no-repeat;
+  background-size: 60vw;
+  background-position: -33% 10%;
+}
+.vision-mission p {
+  text-align: justify;
+  text-justify: auto;
+  font-weight: 400 !important;
+}
+.vision-mission .second-section {
+  height: 1100px;
+}
+.vision-mission .second-section .sec2-title {
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.69);
+}
+.vision-mission .second-section h1 {
+  font-size: 7vw;
+}
+.vision-mission .second-section .sec2-p1 {
+  text-align: justify;
+  max-width: 430px;
+}
+.vision-mission .third-section {
+  height: 52vw;
+  margin-top: 10%;
+}
+.vision-mission .third-section .sec2-p2 {
+  max-width: 100%;
+}
+.vision-mission .third-section .vision {
+  height: 100%;
+}
+.vision-mission .third-section .vision .vision-img-container {
+  width: 50%;
+  -webkit-animation: bg-animate 2s forwards;
+          animation: bg-animate 2s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+.vision-mission .third-section .vision img {
+  height: 96%;
+  width: 96%;
+  z-index: 2;
+}
+.vision-mission .third-section .mission {
+  margin-top: 5rem;
+}
+
+/* FOURTH SECTION */
+.animate-width {
+  -webkit-animation: bg-animate 2s forwards;
+          animation: bg-animate 2s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 100px;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+@-webkit-keyframes bg-animate {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes bg-animate {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 50%;
+  }
+}
